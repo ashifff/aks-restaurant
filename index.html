@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKS Restaurant | Fine Dining & Exquisite Flavors</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">AKS <span>Restaurant</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#reservation" class="btn btn-outline">Book Table</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="sub-heading">Welcome to Culinary Excellence</span>
+            <h1>Where Every Dish Tells a Story</h1>
+            <p>Indulge in artisanal flavors crafted with passion, finest ingredients, and a touch of modern culinary magic.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn btn-secondary">Book a Table</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature-item">
+                <i class="fa-solid fa-utensils"></i>
+                <div>
+                    <h4>Master Chefs</h4>
+                    <p>Crafted by award-winning culinary artists</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                    <h4>Fresh Ingredients</h4>
+                    <p>Locally sourced organic produce daily</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                    <h4>Fine Ambiance</h4>
+                    <p>Warm and elegant dining experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-images">
+                <div class="img-box img-1">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=600" alt="Restaurant Interior">
+                </div>
+                <div class="img-box img-2">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" alt="Chef Preparing Dish">
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="section-tag">Our Story</span>
+                <h2>A Tradition of Exceptional Taste & Hospitality</h2>
+                <p>Founded with a vision to revolutionize modern dining, AKS Restaurant brings together authentic heritage recipes and contemporary culinary techniques. Every dish is meticulously crafted to awaken your senses and create unforgettable dining memories.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>15+</h3>
+                        <p>Years of Legacy</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Expert Chefs</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100k+</h3>
+                        <p>Happy Diners</p>
+                    </div>
+                </div>
+                <a href="#reservation" class="btn btn-primary">Experience Dining</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discover</span>
+                <h2>Our Exquisite Menu</h2>
+                <p>Explore our carefully curated selection of starters, mains, desserts, and handcrafted beverages.</p>
+            </div>
+            
+            <!-- Menu Filter Buttons -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Main Course</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Items populated via JS or static HTML -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Journey</span>
+                <h2>Moments at AKS</h2>
+                <p>A glimpse into our vibrant dishes, cozy atmosphere, and delightful moments.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=600" alt="Dish 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600" alt="Restaurant Bar">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" alt="Pizza">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&q=80&w=600" alt="Dessert">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container reservation-container">
+            <div class="reservation-info">
+                <span class="section-tag">Book Online</span>
+                <h2>Reserve Your Table</h2>
+                <p>Ensure your spot for an unforgettable dining experience. Fill out the reservation form and our concierge will confirm your booking instantly.</p>
+                <div class="contact-details-box">
+                    <div class="c-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 234-5678</p>
+                        </div>
+                    </div>
+                    <div class="c-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="reservation-form" class="reservation-form">
+                <h3>Table Booking</h3>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="time" required>
+                            <option value="" disabled selected>Select Time</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:30">01:30 PM</option>
+                            <option value="18:00">06:00 PM</option>
+                            <option value="19:30">07:30 PM</option>
+                            <option value="21:00">09:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select id="guests" required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="4">4 People</option>
+                        <option value="6">6 People</option>
+                        <option value="8+">8+ People (Group)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Confirm Reservation</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">AKS <span>Restaurant</span></a>
+                <p>Bringing gourmet food enthusiasts together with exceptional flavors, warm ambiance, and world-class hospitality.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Culinary Avenue, Food District, NY</p>
+                <p><i class="fa-solid fa-envelope"></i> reservations@aksrestaurant.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 234-5678</p>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive exclusive offers, seasonal menus, and event invites.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AKS Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
